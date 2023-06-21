@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+  </head>
+  <body>
+    <form onsubmit="return false;">
+      
+      <label id="colour-select-label"for="colour-select-a">Colours: </label> <!-- Colour Select Dropdowns-->
+      <select id="colour-select-a" onchange="colourA();">
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+        <option>Black</option>
+        <option>White</option>
+      </select>
+      <select id="colour-select-b" onchange="colourB();">
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+        <option>Black</option>
+        <option>White</option>
+      </select>
+      
+      <label id="size" for="size-a">SIZE: </label> <!--Size-->
+      <input type="number" id="size-a" min="0" max="10" onchange="squareSizeA();" />
+      <input type="number" id="size-b" min="0" max="10" onchange="squareSizeB();" />
+
+      <label for="speed-a"><em>Speed: </em></label> <!--Speed-->
+      <input type="number" id="speed-a" min="0" max="10" onchange="squareSpeedA();" />
+      <input type="number" id="speed-b" min="0" max="10" onchange="squareSpeedB();" />
+
+      <label for="trail">Trail: </label> <!--trail Y/N-->
+      <input type="checkbox" id="trail" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

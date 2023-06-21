@@ -1,0 +1,18 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+#colour-select-label { /* styling for the colour select label */
+  background-image: linear-gradient(yellow, indigo); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#size { /* styling for the size select label */
+  font-weight: 800;
+  font-size: 25px;
+}
+
+/* styling for speed select is just <em> and trail has no specific styling */ 
